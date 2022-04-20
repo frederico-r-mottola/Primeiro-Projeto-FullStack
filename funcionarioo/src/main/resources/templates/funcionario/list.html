@@ -36,43 +36,57 @@
           </div>
         </div>
       </nav>
+      
 
-      <table class="table">
-        <h2>Lista de Funcionarios</h2>
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Telefone</th>
-            <th scope="col">Email</th>
-            <th scope="col">Cargo</th>
-          </tr> 
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Fred</td>
-            <td>48999288369</td>
-            <td>fred@gmail.com</td>
-            <td>Dev</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Nick</td>
-            <td>48938382222</td>
-            <td>@nick@gmail.com</td>
-            <td>Estagiaria</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Ana</td>
-            <td>48933230321</td>
-            <td>ana@gmail.com</td>
-            <td>Cozinheira</td>
-            
-          </tr>
-        </tbody>
-      </table>
+<div class="table-responsive">
+  <div class="div-tittle">
+    <h2>Tabela de Funcionarios</h2>
+  </div>
+        <table class="table table-hover">
+          <thead class="table-danger">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Cargo</th>
+              <th scope="col">Telefone</th>
+              <th scope="col">Email</th>
+              <th scope="col" colspan="2">
+                <a href=""><i class="fas fa-plus-circle">Adicionar</a></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Frederico Renan</td>
+              <td>Dev Jr</td>
+              <td>(48)9999 12345</td>
+              <td>mark@gmail.com</td>
+              <td scope="col"><a class="a-edit" href="./edit/1"><i class="fa fa-edit"></i></a></td>
+              <td scope="col"><a class="a-delete" href="./delete/1"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Administrador</td>
+              <td>(48)9999 54321</td>
+              <td>jacob@gmail.com</td>
+              <td scope="col"><a class="a-edit" href="./edit/2"><i class="fa fa-edit"></i></a></td>
+              <td scope="col"><a class="a-delete" href="./delete/2"><i class="fa fa-trash"></i></a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>Dev Master</td>
+              <td>(48)9999 23445</td>
+              <td>Larry@gmail.com</td>
+              <td scope="col"><a class="a-edit" href="./edit/3"><i class="fa fa-edit"></i></a></td>
+              <td scope="col"><a class="a-delete" href="./delete/3"><i class="fa fa-trash"></i></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+     
         
     <div class="localizacao"></div>
     <footer>
@@ -95,8 +109,9 @@
 
 
 
+    
+    <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/popper.min.js"></script>
-    <script src="../"></script>
     <script src="../bootstrap-5.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
